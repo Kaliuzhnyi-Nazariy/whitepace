@@ -1,0 +1,41 @@
+[
+  {
+    "type": "Free",
+    "price": 0,
+    "message": "Capture ideas and find them quickly",
+    "advantages": [
+      "Sync unlimited devices",
+      "10 GB monthly uploads",
+      "200 MB max. note size",
+      "Customize Home dashboard and access extra widgets",
+      "Connect primary Google Calendar account",
+      "Add due dates, reminders, and notifications to your tasks"
+    ]
+  },
+  {
+    "type": "Personal",
+    "price": 11.99,
+    "message": "Keep home and family on track",
+    "advantages": [
+      "Sync unlimited devices",
+      "10 GB monthly uploads",
+      "200 MB max. note size",
+      "Customize Home dashboard and access extra widgets",
+      "Connect primary Google Calendar account",
+      "Add due dates, reminders, and notifications to your tasks"
+    ]
+  },
+  {
+    "type": "Organization",
+    "price": 49.99,
+    "message": "Capture ideas and find them quickly",
+    "advantages": [
+      "Sync unlimited devices",
+      "10 GB monthly uploads",
+      "200 MB max. note size",
+      "Customize Home dashboard and access extra widgets",
+      "Connect primary Google Calendar account",
+      "Add due dates, reminders, and notifications to your tasks"
+    ]
+  }
+]
