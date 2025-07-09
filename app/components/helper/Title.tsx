@@ -8,7 +8,11 @@ const Title = ({
   extraStyles?: string;
 }) => {
   return (
-    <h2 className={`${extraStyles && extraStyles} text-4xl font-bold`}>
+    <h2
+      className={`${
+        extraStyles && extraStyles
+      } text-4xl font-bold relative z-[3] text-center`}
+    >
       {children}
     </h2>
   );
