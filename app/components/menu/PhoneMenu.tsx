@@ -7,7 +7,7 @@ const PhoneMenu = ({ closeModal }: { closeModal: () => void }) => {
     "w-full transform transition-all focus-within:text-[var(--golden-second)] hover:text-[var(--golden-second)] active:text-[var(--golden-second)] focus-within:translate-x-1 hover:translate-x-1 active:translate-x-1";
 
   return (
-    <div className="flex flex-col justify-center items-center font-bold text-[20px] text-[var(--background)] fixed top-0 left-0 bg-[var(--darkerprimary)] w-full h-full">
+    <div className="flex flex-col justify-center items-center font-bold text-[20px] text-[var(--background)] fixed top-0 left-0 bg-[var(--darkerprimary)] w-full h-full z-10">
       <button className="absolute top-5 right-4" onClick={() => closeModal()}>
         <IoMdClose />
       </button>

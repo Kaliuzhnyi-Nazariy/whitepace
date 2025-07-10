@@ -9,8 +9,8 @@ const Text = ({
 }) => {
   return (
     <p
-      className={`font-light text-[18px] mt-6 ${
-        extraStyles ? extraStyles : ""
+      className={` text-[18px] mt-6 ${
+        extraStyles ? extraStyles : "font-light text-center"
       }`}
     >
       {children}
