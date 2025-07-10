@@ -1,11 +1,8 @@
 import React from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { IPlan } from "../TypesAndInterfaces";
 
-const ListOfAdvantagesItem = ({
-  plan,
-}: {
-  plan: { type: string; price: number; message: string; advantages: string[] };
-}) => {
+const ListOfAdvantagesItem = ({ plan }: { plan: IPlan }) => {
   return (
     <div
       className={`keen-slider__slide  w-[289px] h-[642px] bg-[var(--darkerprimary)] text-[var(--background)] p-5 rounded-[10px]`}
