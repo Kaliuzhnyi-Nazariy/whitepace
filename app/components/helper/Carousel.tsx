@@ -1,16 +1,23 @@
 "use client";
 
 import React, { useState } from "react";
-import plans from "../plans.json";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import ListOfAdvantagesItem from "./ListOfAdvantagesItem";
+import ListOfAdvantagesItem from "../PlanChosing/ListOfAdvantagesItem";
+import { Commments, IComment, IPlan, Plans } from "../TypesAndInterfaces";
+import CommentItem from "../Reviews/CommentItem";
 
-const ListOfPlans = () => {
-  const [currentSlide, setCurrentSlide] = React.useState(1);
+const Carousel = ({
+  type,
+  value,
+}: {
+  type: "plan" | "comment";
+  value: Plans | Commments;
+}) => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-    initial: 1,
+    initial: currentSlide,
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
     },
@@ -23,8 +30,12 @@ const ListOfPlans = () => {
   return (
     <>
       <div ref={sliderRef} className="keen-slider mt-[85px]">
-        {plans.map((plan, index) => {
-          return <ListOfAdvantagesItem plan={plan} key={index} />;
+        {value.map((v, index) => {
+          return type === "plan" ? (
+            <ListOfAdvantagesItem plan={v as IPlan} key={index} />
+          ) : (
+            <CommentItem comment={v as IComment} key={index} />
+          );
         })}
       </div>
       {loaded && instanceRef.current && (
@@ -52,4 +63,4 @@ const ListOfPlans = () => {
   );
 };
 
-export default ListOfPlans;
+export default Carousel;
