@@ -3,7 +3,8 @@ import Section from "../helper/Section";
 import Title from "../helper/Title";
 import Image from "next/image";
 import Text from "../helper/Text";
-import ListOfPlans from "./ListOfPlans";
+import Carousel from "../helper/Carousel";
+import plans from "../plans.json";
 
 const Plan = () => {
   return (
@@ -22,7 +23,7 @@ const Plan = () => {
         Whether you want to get organized, keep your personal life on track, or
         boost workplace productivity, Evernote has the right plan for you.
       </Text>
-      <ListOfPlans />
+      <Carousel value={plans} type="plan" />
     </Section>
   );
 };
