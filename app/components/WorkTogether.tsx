@@ -4,7 +4,6 @@ import Title from "./helper/Title";
 import Image from "next/image";
 import Text from "./helper/Text";
 import Button from "./helper/Button";
-import { GoArrowRight } from "react-icons/go";
 
 const WorkTogether = () => {
   return (
@@ -24,9 +23,7 @@ const WorkTogether = () => {
         them. You can also publish a note to the internet and share the URL with
         others.
       </Text>
-      <Button>
-        Try it now <GoArrowRight />
-      </Button>
+      <Button>Try it now</Button>
       <Image
         src="/WTI.png"
         alt="work together"

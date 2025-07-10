@@ -4,13 +4,12 @@ import Title from "./helper/Title";
 import Image from "next/image";
 import Text from "./helper/Text";
 import Button from "./helper/Button";
-import { GoArrowRight } from "react-icons/go";
 import PhotoSkeleton from "./helper/PhotoSkeleton";
 
 const UseAsExtension = () => {
   return (
-    <Section extraStyles="bg-[var(--darkerprimary)] text-[var(--background)]">
-      <div className="relative mt-20">
+    <Section extraStyles="bg-[var(--darkerprimary)] text-[var(--background)] pt-20">
+      <div className="relative">
         <Title extraStyles="relative z-[3] text-center">Use as Extension</Title>
         <Image
           src={"/vector.png"}
@@ -25,9 +24,7 @@ const UseAsExtension = () => {
         (Rich Text or Markdown). Or create your own scripts and plugins using
         the Extension API.
       </Text>
-      <Button>
-        Let{"'"}s Go <GoArrowRight />
-      </Button>
+      <Button>Let{"'"}s Go</Button>
       <PhotoSkeleton topMargin={60} bottomMargin={80} />
     </Section>
   );

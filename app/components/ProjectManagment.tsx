@@ -4,7 +4,6 @@ import Title from "./helper/Title";
 import Image from "next/image";
 import Text from "./helper/Text";
 import Button from "./helper/Button";
-import { GoArrowRight } from "react-icons/go";
 import PhotoSkeleton from "./helper/PhotoSkeleton";
 
 const ProjectManagment = () => {
@@ -25,9 +24,7 @@ const ProjectManagment = () => {
         expressions and diagrams directly from the app. Take photos with the
         mobile app and save them to a note.
       </Text>
-      <Button>
-        Get Started <GoArrowRight />
-      </Button>
+      <Button>Get Started</Button>
       <PhotoSkeleton topMargin={60} bottomMargin={100} />
     </Section>
   );
