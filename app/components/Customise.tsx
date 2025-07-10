@@ -5,7 +5,6 @@ import Title from "./helper/Title";
 import Image from "next/image";
 import Text from "./helper/Text";
 import Button from "./helper/Button";
-import { GoArrowRight } from "react-icons/go";
 
 const Customise = () => {
   return (
@@ -26,9 +25,7 @@ const Customise = () => {
         (Rich Text or Markdown). Or create your own scripts and plugins using
         the Extension API.
       </Text>
-      <Button>
-        Let{"'"}s Go <GoArrowRight />
-      </Button>
+      <Button>Let{"'"}s Go </Button>
     </Section>
   );
 };
