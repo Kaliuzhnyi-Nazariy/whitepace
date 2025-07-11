@@ -16,7 +16,7 @@ const Button = ({
 
   return (
     <button
-      className={`w-[232px] h-[70px] rounded-lg bg-[var(--lighterprimary)] px-10 py-5 font-light text-[16px] flex gap-2.5 items-center cursor-pointer text-[var(--background)] justify-center ${mtClass} ${
+      className={` rounded-lg bg-[var(--lighterprimary)] px-10 py-5 font-light text-[16px] flex gap-2.5 items-center cursor-pointer text-[var(--background)] justify-center ${mtClass} ${
         extraStyles ? extraStyles : ""
       } ${anotherPlace ? anotherPlace : "mx-auto"}`}
     >
