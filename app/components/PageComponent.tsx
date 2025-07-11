@@ -11,7 +11,7 @@ import Data from "./Data";
 import Sponsors from "./Sponsors";
 import CllientsSays from "./Reviews/CllientsSays";
 import WorkWith from "./WorkWith";
-import Footer from "./Footer";
+import Footer from "./FooterComponent/Footer";
 import TryComponent from "./Try";
 
 const PageComponent = () => {
