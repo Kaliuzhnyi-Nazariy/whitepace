@@ -11,7 +11,7 @@ const Text = ({
 }) => {
   return (
     <p
-      className={` text-[18px] ${
+      className={` text-[18px] tracking-[-2%] ${
         extraStyles ? extraStyles : "font-light text-center"
       } ${newMT ? newMT : "mt-6"}`}
     >
