@@ -24,12 +24,15 @@ const Carousel = ({
     created() {
       setLoaded(true);
     },
+    slides: {
+      spacing: 32,
+    },
     loop: true,
   });
 
   return (
-    <>
-      <div ref={sliderRef} className="keen-slider mt-[85px]">
+    <div className="min-[768px]:hidden">
+      <div ref={sliderRef} className="keen-slider mt-[85px]  ">
         {value.map((v, index) => {
           return type === "plan" ? (
             <ListOfAdvantagesItem plan={v as IPlan} key={index} />
@@ -49,7 +52,7 @@ const Carousel = ({
                 onClick={() => {
                   instanceRef.current?.moveToIdx(idx);
                 }}
-                className={`w-2.5 h-2.5 rounded-full mx-[5px] p-[5px] cursor-pointer focus:outline-0 mt-20 mb-20 ${
+                className={`w-2.5 h-2.5 rounded-full mx-[5px] p-[5px] cursor-pointer focus:outline-0 mt-[85px] ${
                   currentSlide === idx
                     ? "bg-[var(--darkerprimary)]"
                     : "bg-[var(--lighterprimary)]"
@@ -59,7 +62,7 @@ const Carousel = ({
           })}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
