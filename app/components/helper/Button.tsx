@@ -7,12 +7,14 @@ const Button = ({
   anotherPlace,
   changedMT,
   heroBtn = false,
+  noArrow,
 }: {
   children: React.ReactNode;
   extraStyles?: string;
   anotherPlace?: string;
   changedMT?: string;
   heroBtn?: boolean;
+  noArrow?: boolean;
 }) => {
   const mtClass = changedMT ? changedMT : "mt-[60px]";
 
@@ -25,7 +27,8 @@ const Button = ({
       } ${anotherPlace ? anotherPlace : "mx-auto"} ${heroClass}
        `}
     >
-      {children} <GoArrowRight />
+      {children}
+      {noArrow ? "" : <GoArrowRight />}
     </button>
   );
 };
