@@ -30,9 +30,7 @@ const UseAsExtension = () => {
           Use the web clipper extension, available on Chrome and Firefox, to
           save web pages or take screenshots as notes.
         </Text>
-        <Button anotherPlace="max-[1151px]:mx-auto min-[1152px]:mr-auto ">
-          Let{"'"}s Go
-        </Button>
+        <Button>Let{"'"}s Go</Button>
       </div>
       <PhotoSkeleton topMargin={60} extraStyle="min-[1152px]:m-0 " />
     </Section>

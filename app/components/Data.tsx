@@ -34,9 +34,7 @@ const Data = () => {
           (E2EE) to secure your notes and ensure no-one but yourself can access
           them.
         </Text>
-        <Button anotherPlace="max-[1151px]:mx-auto min-[1152px]:mr-auto ">
-          Read more
-        </Button>
+        <Button>Read more</Button>
       </div>
     </Section>
   );

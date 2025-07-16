@@ -26,9 +26,7 @@ const WorkTogether = () => {
           on them. You can also publish a note to the internet and share the URL
           with others.
         </Text>
-        <Button anotherPlace="max-[1151px]:mx-auto min-[1152px]:mr-auto ">
-          Try it now
-        </Button>
+        <Button>Try it now</Button>
       </div>
       <Image
         src="/WTI.png"

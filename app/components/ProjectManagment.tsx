@@ -28,9 +28,7 @@ const ProjectManagment = () => {
           expressions and diagrams directly from the app. Take photos with the
           mobile app and save them to a note.
         </Text>
-        <Button anotherPlace="max-[1151px]:mx-auto min-[1152px]:mr-auto ">
-          Get Started
-        </Button>
+        <Button>Get Started</Button>
       </div>
       <PhotoSkeleton topMargin={60} extraStyle="min-[1152px]:m-0" />
     </Section>
