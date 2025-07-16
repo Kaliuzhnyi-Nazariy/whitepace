@@ -11,10 +11,12 @@ const Section = ({
 }) => {
   return (
     <section
-      className={`${extraStyles && extraStyles} flex flex-col items-center`}
+      className={`${
+        extraStyles && extraStyles
+      } flex flex-col items-center min-[1920px]:px-[220px]`}
     >
       <div
-        className={`max-md:w-[288px] max-[1151px]:w-[704px] mx-4 max-[1152px]:mx-5 max-[1440px]:mx-8 min-[1152px]:w-[1088px] min-[1440px]:w-[1376px] min-[1920px]:w-[1480px] ${flexStyle}`}
+        className={`max-md:w-[288px] max-[1151px]:w-[704px] mx-4 max-[1152px]:mx-5 max-[1440px]:mx-8 min-[1152px]:w-[1088px] min-[1440px]:w-[1376px] min-[1920px]:w-full  ${flexStyle}`}
       >
         {children}
       </div>
