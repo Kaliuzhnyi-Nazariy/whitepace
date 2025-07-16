@@ -6,9 +6,15 @@ import Text from "../helper/Text";
 const Info = () => {
   return (
     <div className="min-[1152px]:w-60 ">
-      <div className="flex gap-2.5 items-center justify-center ">
+      <div className="flex gap-2.5 items-center justify-center min-[768px]:justify-start h-[34px] min-[768px]:h-[62px] max-[1151px]:h-[62px] ">
         <Image src="/logoicon.png" alt="company logo" width={37} height={29} />
-        <Title extraStyles="text-[28px] ">Whitepace</Title>
+        <Title
+          newFontSize=" text-[28px] tracking-normal min-[768px]:text-[52px] min-[1152px]:text-[28px]   "
+          extraStyles="text-start  "
+          isHero
+        >
+          Whitepace
+        </Title>
       </div>
       <Text extraStyles=" text-center md:text-start ">
         whitepace was created for the new ways we live and work.{" "}

@@ -9,10 +9,18 @@ const TryIt = ({
   textStyle = "",
   buttonStyle = "",
   anotherBtnPlace = "",
+  newFontSize = "",
 }) => {
   return (
     <div className={extraStyle}>
-      <Title extraStyles={titleStyle}>Try It Today</Title>
+      <Title
+        changedLetSpace="leading-[39px]"
+        extraStyles={titleStyle}
+        newFontSize={newFontSize}
+        isHero
+      >
+        Try It Today
+      </Title>
       <Text extraStyles={textStyle}>
         Get started for free. Add your whole team as your needs grow.
       </Text>

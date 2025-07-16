@@ -14,8 +14,8 @@ const Footer = () => {
   const liStyles = "flex flex-col max-md:items-center md:items-start";
 
   return (
-    <Section extraStyles="pt-[140px] justify-start bg-[var(--darkerprimary)] text-[var(--background)] py-8 ">
-      <div className="mt-20 flex flex-col max-md:items-center md:items-start">
+    <Section extraStyles="pt-[140px] justify-start bg-[var(--darkerprimary)] text-[var(--background)]  min-[768px]:pt-20 min-[768px]:pb-[100px] min-[1152px]:pt-[140px] ">
+      <div className="flex flex-col max-md:items-center md:items-start">
         <ul className="flex flex-col max-[1152px]:gap-20 min-[1152px]:flex-row min-[1152px]:justify-between min-[1152px]:w-full ">
           <li className={liStyles}>
             <Info />
@@ -32,8 +32,9 @@ const Footer = () => {
           <li className={liStyles}>
             <TryIt
               extraStyle="w-[201px] min-[1152px]:w-[259px] "
-              textStyle="font-light text-start min-[1152px]:tracking-[-2%] min-[1152px]:text-[16px] "
-              titleStyle="tracking-[-2%] text-[28px] min-[1152px]:text-start "
+              textStyle="font-light text-center min-[1152px]:tracking-[-0.02em] min-[1152px]:text-[16px] min-[768px]:text-start "
+              titleStyle=" min-[1152px]:text-start"
+              newFontSize="text-[28px]"
               buttonStyle="w-[187px]"
               anotherBtnPlace="min-[1152px]:mr-auto "
             />

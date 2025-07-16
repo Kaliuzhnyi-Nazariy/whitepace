@@ -11,13 +11,7 @@ const Customise = () => {
       extraStyles="py-[100px] min-[768px]:py-[140px] "
       flexStyle="min-[1152px]:flex min-[1152px]:items-center min-[1152px]:justify-between "
     >
-      <PhotoSkeleton
-        extraStyle="mb-[60px] min-[1152px]:m-0 min-[1152px]:h-[398px] "
-        lpW={670}
-        lpH={500}
-        descW={714}
-        descH={532}
-      />
+      <PhotoSkeleton extraStyle="mb-[60px] min-[1152px]:m-0 min-[1152px]:h-[398px] " />
       <div className="min-[1152px]:w-[494px] min-[1440px]:w-[646px] ">
         <TitleWithDrawing
           ImageLink="/vector.png"
@@ -33,9 +27,7 @@ const Customise = () => {
           editors (Rich Text or Markdown). Or create your own scripts and
           plugins using the Extension API.
         </Text>
-        <Button anotherPlace="max-[1151px]:mx-auto min-[1152px]:mr-auto ">
-          Let{"'"}s Go{" "}
-        </Button>
+        <Button>Let{"'"}s Go </Button>
       </div>
     </Section>
   );
