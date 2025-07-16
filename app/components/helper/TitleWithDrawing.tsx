@@ -9,6 +9,7 @@ const TitleWithDrawing = ({
   height,
   stylesForImage,
   extraTextStyles,
+  newFontSize,
 }: {
   children: React.ReactNode;
   ImageLink: string;
@@ -16,10 +17,14 @@ const TitleWithDrawing = ({
   height: number;
   stylesForImage: string;
   extraTextStyles?: string;
+  newFontSize?: string;
 }) => {
   return (
     <div className="relative">
-      <Title extraStyles={extraTextStyles ? extraTextStyles : ""}>
+      <Title
+        extraStyles={extraTextStyles ? extraTextStyles : ""}
+        newFontSize={newFontSize && newFontSize}
+      >
         {children}
       </Title>
       <Image
