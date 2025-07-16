@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { IoMdClose } from "react-icons/io";
+import Button from "../helper/Button";
 
 const PhoneMenu = ({ closeModal }: { closeModal: () => void }) => {
   const listItemStyles =
@@ -11,12 +12,12 @@ const PhoneMenu = ({ closeModal }: { closeModal: () => void }) => {
       <button className="absolute top-5 right-4" onClick={() => closeModal()}>
         <IoMdClose />
       </button>
-      <p className="flex items-center gap-2 mb-10">
+      <p className="flex items-center gap-2 mb-10 min-[768px]:text-2xl min-[1152px]:text-3xl ">
         <Image src="/logoIcon.png" alt="logo" width={26} height={22} />
         whitepace
       </p>
       <nav>
-        <ul className="flex flex-col gap-2 font-light text-[12px] w-full">
+        <ul className="flex flex-col gap-2 font-light text-[12px] w-full min-[768px]:text-[16px] min-[1152px]:text-[18px] min-[1152px]:gap-4 ">
           <li className={listItemStyles} onClick={() => closeModal()}>
             <a href="#products">Products</a>
           </li>
@@ -28,6 +29,20 @@ const PhoneMenu = ({ closeModal }: { closeModal: () => void }) => {
           </li>
           <li className={listItemStyles} onClick={() => closeModal()}>
             <a href="#pricing">Pricing</a>
+          </li>
+          <li className="w-full mt-10 flex flex-col items-center gap-2 min-[768px]:gap-4 min-[1152px]:hidden ">
+            <div onClick={closeModal}>
+              <a href="">
+                <Button isAuthBtn isLogin noArrow>
+                  Login
+                </Button>
+              </a>
+            </div>
+            <div onClick={closeModal}>
+              <a href="">
+                <Button isAuthBtn>Try Whitepace free</Button>
+              </a>
+            </div>
           </li>
         </ul>
       </nav>
