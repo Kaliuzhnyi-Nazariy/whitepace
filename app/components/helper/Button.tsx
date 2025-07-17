@@ -10,6 +10,7 @@ const Button = ({
   noArrow,
   isLogin = false,
   isAuthBtn = false,
+  cardBtn = false,
 }: {
   children: React.ReactNode;
   extraStyles?: string;
@@ -19,6 +20,7 @@ const Button = ({
   noArrow?: boolean;
   isLogin?: boolean;
   isAuthBtn?: boolean;
+  cardBtn?: boolean;
 }) => {
   const mtClass = changedMT ? changedMT : "mt-[60px]";
 
@@ -29,6 +31,8 @@ const Button = ({
       ? " px-5 min-[768px]:px-10 bg-[var(--golden-second)] text-[var(--darkerprimary)] "
       : " px-3 min-[768px]:px-6 bg-[var(--lighterprimary)] text-[var(--background)] "
   } `;
+
+  const basicStyles = " items-center cursor-pointer justify-center border-[1] ";
 
   return (
     // <button
@@ -45,10 +49,14 @@ const Button = ({
     // {noArrow ? "" : <GoArrowRight />}
     // </button>
     <button
-      className={` ${
+      className={` ${basicStyles} ${
         isAuthBtn
           ? authBtn
-          : `rounded-lg bg-[var(--lighterprimary)] px-10 py-5 font-light text-[16px] flex gap-2.5 items-center cursor-pointer text-[var(--background)] justify-center ${mtClass} ${
+          : `rounded-lg ${
+              cardBtn
+                ? " px-10 py-4 bg-[var(--background)] border-[var(--golden-second)] text-[var(--foreground)] font-medium group-hover:bg-[var(--lighterprimary)] group-hover:border-transparent group-hover:text-[var(--backgroundground)] group-active:bg-[var(--lighterprimary)] group-active:border-transparent group-active:text-[var(--backgroundground)] group-focus:bg-[var(--lighterprimary)] group-focus:border-transparent group-focus:text-[var(--backgroundground)]  "
+                : " bg-[var(--lighterprimary)] border-transparent text-[var(--background)]"
+            } px-10 py-5 font-light text-[16px] flex gap-2.5  ${mtClass} ${
               extraStyles ? extraStyles : ""
             } ${
               anotherPlace
