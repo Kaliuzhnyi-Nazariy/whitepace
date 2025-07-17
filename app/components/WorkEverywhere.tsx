@@ -19,7 +19,7 @@ const WorkEverywhere = () => {
           ImageLink="/VectorBlue.png"
           width={274}
           height={31}
-          stylesForImage="-bottom-3.5 min-[768px]:w-[233px] min-[768px]:h-[46px] min-[768px]:-bottom-0.5 min-[768px]:-left-1.5 min-[1152px]:w-[304px] min-[1152px]:h-[42px] min-[1152px]:left-auto  min-[1152px]:-right-3.5 min-[1152px]:-bottom-2.5 min-[1440px]:w-[312px] min-[1440px]:h-6 min-[1440px]:-right-7 min-[1440px]:-bottom-0 "
+          stylesForImage="-bottom-3.5 min-[768px]:w-[233px] min-[768px]:h-[46px] min-[768px]:-bottom-4 min-[768px]:-left-1.5 min-[1152px]:w-[304px] min-[1152px]:h-[42px] min-[1152px]:left-auto  min-[1152px]:-right-3.5 min-[1152px]:-bottom-2.5 min-[1440px]:w-[312px] min-[1440px]:h-6 min-[1440px]:-right-7 min-[1440px]:-bottom-0 "
           extraTextStyles="text-start min-[1440px]:text-center "
         >
           Your work, everywhere you are

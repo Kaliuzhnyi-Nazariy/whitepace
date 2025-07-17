@@ -20,7 +20,7 @@ const PhotoSkeleton = ({
 
   const laptopStyle = "min-[1440px]:w-[685px] min-[1440px]:h-[456px]";
 
-  const desctopStyles = `min-[1920px]:w-[824px] min-[1920px]:h-[549px]`;
+  const desctopStyles = `min-[1920px]:w-[719px] min-[1920px]:h-[549px]`;
 
   return (
     <div

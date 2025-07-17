@@ -15,9 +15,9 @@ const Customise = () => {
       <div className="min-[1152px]:w-[494px] min-[1440px]:w-[646px] ">
         <TitleWithDrawing
           ImageLink="/vector.png"
-          width={170}
-          height={40}
-          stylesForImage="-bottom-1 right-0 min-[768px]:w-[237px] min-[768px]:h-5 min-[768px]:-right-10 min-[768px]:bottom-2 min-[1152px]:w-[355px] min-[1152px]:h-[30px] min-[1152px]:right-auto min-[1152px]:-bottom-2 min-[1440px]:w-[491px] min-[1440px]:h-8 min-[1440px]:bottom-2 min-[1920px]:w-[448px] min-[1920px]:-bottom-3"
+          width={157}
+          height={26}
+          stylesForImage="-bottom-1 right-3 min-[768px]:w-[235px] min-[768px]:h-5 min-[768px]:-right-10 min-[768px]:-bottom-0.5 min-[1152px]:w-[355px] min-[1152px]:h-[30px] min-[1152px]:right-auto min-[1152px]:-bottom-2 min-[1440px]:w-[491px] min-[1440px]:h-8 min-[1440px]:bottom-1.5 min-[1920px]:w-[448px] min-[1920px]:-bottom-3"
           extraTextStyles="min-[1152px]:text-start"
         >
           Customise it to your needs

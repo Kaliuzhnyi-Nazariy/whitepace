@@ -23,7 +23,7 @@ const Data = () => {
           ImageLink="/Vector.png"
           width={194}
           height={24}
-          stylesForImage="-bottom-3.5 -right-4 min-[768px]:w-[300px] min-[768px]:h-[33px] min-[768px]:bottom-0 min-[768px]:-translate-x-1/2 min-[768px]:-right-10 min-[1152px]:w-[281px] min-[1152px]:h-10 min-[1152px]:-bottom-3.5 min-[1152px]:translate-x-0 min-[1152px]:right-12  min-[1440px]:w-[350px] min-[1440px]:h-[37px] min-[1440px]:-translate-x-1/2 min-[1440px]:-right-12 min-[1440px]:-bottom-6 min-[1920px]:w-[328px] min-[1920px]:right-26 min-[1920px]:-bottom-3.5 "
+          stylesForImage="-bottom-3.5 -right-4 min-[768px]:w-[300px] min-[768px]:h-[33px] min-[768px]:-bottom-2.5 min-[768px]:-translate-x-1/2 min-[768px]:-right-[50px] min-[1152px]:w-[283px] min-[1152px]:h-10 min-[1152px]:-bottom-4.5 min-[1152px]:translate-x-0 min-[1152px]:right-[46px]  min-[1440px]:w-[350px] min-[1440px]:h-[37px] min-[1440px]:-translate-x-1/2 min-[1440px]:-right-16 min-[1440px]:-bottom-6 min-[1920px]:w-[328px] min-[1920px]:right-26 min-[1920px]:-bottom-3.5 "
           extraTextStyles="mt-[100px] min-[1152px]:text-start "
         >
           100% your data

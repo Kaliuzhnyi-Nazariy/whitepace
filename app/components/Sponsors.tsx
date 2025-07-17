@@ -10,7 +10,7 @@ const Sponsors = () => {
         ImageLink="/Vector.png"
         width={190}
         height={23}
-        stylesForImage="-bottom-[18px] right-0 min-[768px]:w-[261px] min-[768px]:h-[39px] min-[768px]:-translate-x-1/2 min-[768px]:right-6 min-[768px]:-bottom-1.5 min-[1152px]:right-[170px] min-[1152px]:-bottom-5  min-[1152px]:w-[300px] min-[1152px]:right-[42px] min-[1440px]:w-[336px] min-[1440px]:right-[20%] min-[1920px]:w-[326px] min-[1920px]:right-[22%] "
+        stylesForImage="-bottom-[18px] right-0 min-[768px]:w-[261px] min-[768px]:h-[39px] min-[768px]:-translate-x-1/2 min-[768px]:right-6 min-[768px]:-bottom-4.5 min-[1152px]:right-[170px] min-[1152px]:-bottom-5  min-[1152px]:w-[300px] min-[1152px]:right-[42px] min-[1152px]:h-[42px] min-[1440px]:w-[336px] min-[1440px]:right-[20%] min-[1440px]:-bottom-6 min-[1440px]:h-[43px] min-[1920px]:w-[326px] min-[1920px]:right-[22%]  min-[1920px]:-bottom-5 "
       >
         Our sponsors
       </TitleWithDrawing>

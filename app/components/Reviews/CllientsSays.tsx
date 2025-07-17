@@ -5,15 +5,34 @@ import commetors from "../comments.json";
 import Carousel from "../helper/Carousel";
 
 const CllientsSays = () => {
+  const smLp =
+    "min-[1152px]:w-[155px] min-[1152px]:h-[51px] min-[1152px]:-bottom-[10px] min-[1152px]:left-auto min-[1152px]:right-[20%] min-[1152px]:-translate-x-1/2  ";
+  const lp =
+    "min-[1440px]:w-[194px] min-[1440px]:h-[48px] min-[1440px]:bottom-0 min-[1440px]:right-[18%] ";
+  const desc =
+    "min-[1920px]:w-[258px] min-[1920px]:right-[11%] min-[1920px]:bottom-1 ";
+
   return (
-    <Section extraStyles="py-[100px] ">
+    <Section extraStyles="py-[100px] min-[768px]:pt-[140px] min-[1152px]:py-[140px] ">
       <TitleWithDrawing
         ImageLink="/Vector.png"
         width={120}
         height={26}
-        stylesForImage="bottom-2 left-18"
+        stylesForImage={`bottom-2 left-18 h-7 block min-[768px]:hidden min-[1152px]:block ${smLp} ${lp} ${desc} `}
+        newFontSize="text-[40px] min-[1440px]:text-[70px] "
+        extraTextStyles="block min-[768px]:hidden min-[1152px]:block min-[1152px]:tracking-normal min-[1440px]:text-[70px] "
       >
         What Our Clients Says
+      </TitleWithDrawing>
+      <TitleWithDrawing
+        ImageLink="/Vector.png"
+        width={230}
+        height={32}
+        stylesForImage="hidden min-[768px]:block min-[1152px]:hidden top-12 right-[140px] h-7"
+        extraTextStyles="hidden min-[768px]:block min-[1152px]:hidden"
+        newFontSize={"text-[40px]"}
+      >
+        See what our trusted users Say
       </TitleWithDrawing>
       <Carousel type="comment" value={commetors} />
     </Section>

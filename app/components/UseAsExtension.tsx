@@ -16,7 +16,7 @@ const UseAsExtension = () => {
           ImageLink="/vector.png"
           width={140}
           height={20}
-          stylesForImage="bottom-0 right-5 min-[768px]:w-[244px] min-[768px]:h-7 min-[768px]:right-16 min-[1152px]:w-[312px] min-[1152px]:h-[18px] min-[1152px]:right-1 min-[1440px]:w-[416px] min-[1440px]:h-[19px] min-[1440px]:left-0 min-[1440px]:-bottom-7 min-[1920px]:w-[333px] min-[1920px]:bottom-0 min-[1920px]:left-auto min-[1920px]:right-[110px]"
+          stylesForImage="bottom-0 right-5 min-[768px]:w-[244px] min-[768px]:h-7 min-[768px]:right-[64px] min-[768px]:-bottom-1.5 min-[1152px]:w-[312px] min-[1152px]:h-[18px] min-[1152px]:right-1 min-[1152px]:bottom-2 min-[1440px]:w-[416px] min-[1440px]:h-[19px] min-[1440px]:left-0 min-[1440px]:-bottom-7 min-[1920px]:w-[333px] min-[1920px]:bottom-0 min-[1920px]:left-auto min-[1920px]:right-[100px]"
           extraTextStyles="min-[1152px]:text-start"
         >
           Use as Extension
@@ -36,5 +36,4 @@ const UseAsExtension = () => {
     </Section>
   );
 };
-
 export default UseAsExtension;

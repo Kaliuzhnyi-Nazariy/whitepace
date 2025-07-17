@@ -6,6 +6,20 @@ import Button from "./helper/Button";
 import TitleWithDrawing from "./helper/TitleWithDrawing";
 
 const WorkTogether = () => {
+  const mobStyles = "absolute bottom-0.5 right-0 min-[768px]:-translate-x-1/2 ";
+
+  const tabletStyles =
+    " min-[768px]:w-[224px] min-[768px]:h-8 min-[768px]:right-14 min-[768px]:-bottom-5 ";
+
+  const laptop =
+    "min-[1152px]:-right-14 min-[1152px]:bottom-3 min-[1152px]:w-[266px] min-[1152px]:h-[25px] ";
+
+  const desc =
+    " min-[1440px]:w-[331px] min-[1440px]:h-[26px] min-[1440px]:-bottom-1.5 min-[1440px]:-right-20 ";
+
+  const bigDesc =
+    " min-[1920px]:bottom-0 min-[1920px]:w-[298px] min-[1920px]:right-2 ";
+
   return (
     <Section
       extraStyles="mb-20 min-[768px]:mb-[100px] min-[1152px]:mt-[100px] "
@@ -16,7 +30,7 @@ const WorkTogether = () => {
           ImageLink="/vector.png"
           width={164}
           height={26}
-          stylesForImage="absolute bottom-0.5 right-[5px] min-[768px]:-translate-x-1/2 min-[768px]:w-[224px] min-[768px]:h-8 min-[768px]:right-14 min-[768px]:-bottom-1.5 min-[1152px]:-right-14 min-[1152px]:bottom-2 min-[1152px]:w-[266px] min-[1152px]:h-[25px] min-[1440px]:w-[331px] min-[1440px]:h-[26px] min-[1440px]:-bottom-1.5 min-[1440px]:-right-22 min-[1920px]:-right-[42px] "
+          stylesForImage={`${mobStyles} ${tabletStyles} ${laptop} ${desc} ${bigDesc}`}
           extraTextStyles="min-[1152px]:text-start"
         >
           Work together
