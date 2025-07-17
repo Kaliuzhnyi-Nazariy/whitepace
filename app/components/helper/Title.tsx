@@ -13,7 +13,7 @@ const Title = ({
   newFontSize?: string;
   changedLetSpace?: string;
 }) => {
-  const newFontSz = newFontSize ? newFontSize : "text-4xl";
+  const newFontSz = newFontSize ? newFontSize : "";
   const newLead = changedLetSpace ? changedLetSpace : "min-[1152px]:leading-20";
 
   return (
@@ -21,7 +21,7 @@ const Title = ({
       className={`${extraStyles && extraStyles} ${
         newFontSz
           ? newFontSz
-          : "min-[768px]:text-[54px] min-[1152px]:text-[64px]"
+          : "text-4xl min-[768px]:text-[54px] min-[1152px]:text-[64px]"
       }  font-bold relative z-[3] text-center ${newLead} tracking-[-0.02em] ${
         isHero ? "" : "min-[1440px]:text-[72px]"
       }  `}
