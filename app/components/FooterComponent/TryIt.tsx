@@ -29,7 +29,7 @@ const TryIt = ({
         extraStyles={buttonStyle}
         anotherPlace={anotherBtnPlace}
       >
-        Satrt today
+        Start today
       </Button>
     </div>
   );
