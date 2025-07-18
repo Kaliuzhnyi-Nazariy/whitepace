@@ -35,7 +35,7 @@ const Footer = () => {
               textStyle="font-light text-center min-[1152px]:tracking-[-0.02em] min-[1152px]:text-[16px] min-[768px]:text-start "
               titleStyle=" min-[1152px]:text-start"
               newFontSize="text-[28px]"
-              buttonStyle="w-[187px]"
+              buttonStyle="w-[196px]  "
               anotherBtnPlace="min-[1152px]:mr-auto "
             />
           </li>
