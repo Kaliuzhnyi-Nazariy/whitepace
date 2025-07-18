@@ -16,3 +16,13 @@ export interface IComment {
 }
 
 export type Commments = IComment[];
+
+export interface ITrusted {
+  image: string;
+  name: string;
+  job: string;
+  company: string;
+  comment: string;
+}
+
+export type TrustedComments = ITrusted[];
