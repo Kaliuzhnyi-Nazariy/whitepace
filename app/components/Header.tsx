@@ -62,8 +62,11 @@ const Header = () => {
               <Button isAuthBtn>Try Whitepace free</Button>{" "}
             </li>
           </ul>
-          <button onClick={() => openMenu()} className="min-[1440px]:hidden ">
-            <GiHamburgerMenu />
+          <button
+            onClick={() => openMenu()}
+            className="min-[1440px]:hidden w-10.5 "
+          >
+            <GiHamburgerMenu className="w-[42px] h-[24px] min-[768px]:h-[34px] min-[1152px]:h-[24px] " />
           </button>
         </div>
       </nav>
