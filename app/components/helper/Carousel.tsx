@@ -4,15 +4,25 @@ import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import ListOfAdvantagesItem from "../PlanChosing/ListOfAdvantagesItem";
-import { Commments, IComment, IPlan, Plans } from "../TypesAndInterfaces";
+import {
+  Commments,
+  IComment,
+  IPlan,
+  ITrusted,
+  Plans,
+  TrustedComments,
+} from "../TypesAndInterfaces";
 import CommentItem from "../Reviews/CommentItem";
+import TrustedComment from "../Reviews/TrustedComment";
 
 const Carousel = ({
   type,
   value,
+  extraStyles = "",
 }: {
-  type: "plan" | "comment";
-  value: Plans | Commments;
+  type: "plan" | "comment" | "trusted";
+  value: Plans | Commments | TrustedComments;
+  extraStyles?: string;
 }) => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -26,18 +36,35 @@ const Carousel = ({
     },
     slides: {
       spacing: 32,
+      perView: "auto",
+      origin: "center",
     },
     loop: true,
+    mode: "free",
   });
 
   return (
-    <div className="min-[768px]:hidden">
+    <div
+      className={`${
+        type === "plan" ? "min-[768px]:hidden" : ""
+      } ${extraStyles}`}
+    >
       <div ref={sliderRef} className="keen-slider mt-[85px]  ">
         {value.map((v, index) => {
           return type === "plan" ? (
             <ListOfAdvantagesItem plan={v as IPlan} key={index} />
+          ) : type === "comment" ? (
+            <CommentItem
+              comment={v as IComment}
+              key={index}
+              isChangedStyle={index === currentSlide}
+            />
           ) : (
-            <CommentItem comment={v as IComment} key={index} />
+            <TrustedComment
+              comment={v as ITrusted}
+              isChangedStyle={index === currentSlide}
+              key={index}
+            />
           );
         })}
       </div>
@@ -67,3 +94,18 @@ const Carousel = ({
 };
 
 export default Carousel;
+
+{
+  /* <CommentItem
+  comment={v as IComment}
+  key={index}
+  extraClass=" min-[768px]:hidden min-[1152px]:block "
+/> */
+}
+{
+  /* <CommentItem
+  comment={v as IComment}
+  key={index + 10}
+  extraClass=" hidden min-[768px]:block min-[1152px]:hidden "
+/> */
+}
