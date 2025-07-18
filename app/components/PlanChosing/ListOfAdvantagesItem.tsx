@@ -24,7 +24,7 @@ const ListOfAdvantagesItem = ({ plan }: { plan: IPlan }) => {
     "min-[768px]:focus:py-20 min-[768px]:focus:bg-[var(--darkerprimary)] min-[768px]:focus:text-[var(--background)] min-[768px]:focus:h-[711px] focus:fill-[var(--golden-second)] min-[1152px]:focus:text-[18px] min-[1152px]:focus:h-[761px] ";
 
   return (
-    <div
+    <li
       className={` group p-5 rounded-[10px] border-[1] border-transparent  transition-all min-[768px]:py-10 ${mobStyles} ${tabletView} ${smallLaptopStyle} ${LaptopStyle} ${desctopStyle} ${hoverStyles} ${activeStyles} ${focusStyles}  `}
     >
       <h3 className="font-semibold text-2xl min-[1152px]:leading-9 ">
@@ -68,7 +68,7 @@ const ListOfAdvantagesItem = ({ plan }: { plan: IPlan }) => {
       >
         Get Started
       </Button>
-    </div>
+    </li>
   );
 };
 
