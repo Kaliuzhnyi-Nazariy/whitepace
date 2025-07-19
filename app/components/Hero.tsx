@@ -10,11 +10,11 @@ import BgPict from "./helper/BgPict";
 const HeroComponent = () => {
   return (
     <Section
-      extraStyles="relative bg-[var(--darkerprimary)] py-20 flex max-[1152px]:flex-col justify-center items-center text-center text-[var(--background)] overflow-hidden z-0 max-[1152px]:pt-[140px] max-[1152px]:pb-[100px] min-[1152px]:flex-row min-[1152px]:py-[140px] "
+      extraStyles="relative bg-[var(--darkerprimary)] py-20 flex max-[1152px]:flex-col justify-center items-center text-center text-[var(--background)] overflow-hidden z-0 max-[1152px]:pt-[140px] max-[1152px]:pb-[100px] min-[1152px]:flex-row min-[1152px]:py-[140px]"
       flexStyle="min-[1152px]:flex min-[1152px]:items-center min-[1152px]:justify-between "
     >
-      <BgPict width={1026} height={633} rotDeg={18} />
-      <div className="z-10 max-[1152px]:mt-20 min-[1152px]:w-[562px] ">
+      <BgPict />
+      <div className="z-10 max-[1152px]:mt-20 min-[1152px]:w-[562px] min-[1920px]:w-[656px] ">
         <Title isHero={true} extraStyles="min-[1152px]:text-start">
           Get More Done with whitepace
         </Title>
