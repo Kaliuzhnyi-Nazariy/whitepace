@@ -5,12 +5,16 @@ const Text = ({
   extraStyles,
   newMT,
   noTracking,
-}: {
+}: // newFontSize,
+{
   children: React.ReactNode;
   extraStyles?: string;
   newMT?: string;
   noTracking?: boolean;
+  newFontSize?: string;
 }) => {
+  // const newFont
+
   return (
     <p
       className={` text-[18px]  ${
