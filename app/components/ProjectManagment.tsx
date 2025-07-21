@@ -6,6 +6,7 @@ import Text from "./helper/Text";
 import Button from "./helper/Button";
 import PhotoSkeleton from "./helper/PhotoSkeleton";
 import TitleWithDrawing from "./helper/TitleWithDrawing";
+import Image from "next/image";
 
 const ProjectManagment = () => {
   const mobStlye =
@@ -25,10 +26,17 @@ const ProjectManagment = () => {
 
   return (
     <Section
-      extraStyles="text-center max-md:pt-20 max-md:pb-[100px] max-[1151px]:py-[100px] min-[1152px]:pt-[140px] "
+      extraStyles="text-center max-md:pt-20 max-md:pb-[100px] max-[1151px]:py-[100px] min-[1152px]:pt-[140px] relative "
       flexStyle=" min-[1152px]:flex min-[1152px]:items-center min-[1152px]:flex-row min-[1152px]:justify-between"
     >
       <div className="min-[1152px]:w-[436px] min-[1440px]:w-[657px] min-[1920px]:w-[672px] ">
+        <Image
+          src={"/circleforpm.png"}
+          alt="circles"
+          width={169}
+          height={210}
+          className="absolute z-[-1] left-[-16.5%] rotate-[-18deg] top-[7%] opacity-[20%] min-[768px]:w-[356px] min-[768px]:h-[271px] min-[768px]:rotate-[351deg] min-[768px]:left-[-20%] min-[768px]:top-[4%] min-[1152px]:w-[245px] min-[1152px]:h-[250px] min-[1152px]:left-[-6%] min-[1152px]:top-[13%] min-[1152px]:rotate-[330deg] min-[1440px]:w-[450px] min-[1440px]:h-[400px] min-[1440px]:rotate-[353deg] min-[1440px]:top-[2%] min-[1440px]:left-[-14%] min-[1920px]:w-full min-[1920px]:max-w-[430px] min-[1920px]:h-full min-[1920px]:max-h-[449px] min-[1920px]:rotate-0 min-[1920px]:top-[40%] min-[1920px]:left-0 "
+        />
         <TitleWithDrawing
           ImageLink="/vector.png"
           width={229}
