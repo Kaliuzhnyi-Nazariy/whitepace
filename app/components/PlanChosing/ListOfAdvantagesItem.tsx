@@ -7,9 +7,9 @@ const ListOfAdvantagesItem = ({ plan }: { plan: IPlan }) => {
   // const mobStyles = `keen-slider__slide  w-[289px] h-[642px] bg-[var(--darkerprimary)] text-[var(--background)] p-5 rounded-[10px]`;
 
   const mobStyles =
-    " keen-slider__slide w-[289px] h-[642px] bg-[var(--darkerprimary)] text-[var(--background)] ";
+    " keen-slider__slide w-[289px] h-[642px] bg-[var(--darkerprimary)] text-[var(--background)] flex-shrink-0 ";
   const tabletView =
-    " flex-shrink-0 min-[768px]:w-[472px] max-[1151px]:min-w-[472px] min-[768px]:h-[628px] min-[768px]:border-[var(--golden-second)] min-[768px]:bg-[var(--background)]  min-[768px]:text-[var(--foreground)] min-[768px]:px-[44px]";
+    " min-[768px]:w-[472px] min-[768px]:h-[628px] min-[768px]:border-[var(--golden-second)] min-[768px]:bg-[var(--background)]  min-[768px]:text-[var(--foreground)] min-[768px]:px-[44px]";
   const smallLaptopStyle =
     " min-[1152px]:w-[341px] min-[1152px]:h-[697px] min-[1152px]:text-[16px] min-[1152px]:tracking-5 ";
   const LaptopStyle = "min-[1440px]:w-[437px] min-[1440px]:h-[654px]  ";
@@ -24,7 +24,7 @@ const ListOfAdvantagesItem = ({ plan }: { plan: IPlan }) => {
     "min-[768px]:focus:py-20 min-[768px]:focus:bg-[var(--darkerprimary)] min-[768px]:focus:text-[var(--background)] min-[768px]:focus:h-[711px] focus:fill-[var(--golden-second)] min-[1152px]:focus:text-[18px] min-[1152px]:focus:h-[761px] ";
 
   return (
-    <li
+    <div
       className={` group p-5 rounded-[10px] border-[1] border-transparent  transition-all min-[768px]:py-10 ${mobStyles} ${tabletView} ${smallLaptopStyle} ${LaptopStyle} ${desctopStyle} ${hoverStyles} ${activeStyles} ${focusStyles}  `}
     >
       <h3 className="font-semibold text-2xl min-[1152px]:leading-9 ">
@@ -68,7 +68,7 @@ const ListOfAdvantagesItem = ({ plan }: { plan: IPlan }) => {
       >
         Get Started
       </Button>
-    </li>
+    </div>
   );
 };
 
