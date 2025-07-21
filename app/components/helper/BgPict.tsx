@@ -33,7 +33,7 @@ const BgPict = () =>
           alt="lines"
           width={1046}
           height={633}
-          className={`absolute z-[-1] hidden pointer-events-none min-[1920px]:min-w-[2652px] min-[1920px]:h-[547px] min-[1440px]:min-w-[1989px] min-[1440px]:h-[433px] min-[1440px]:top-[56%] min-[1440px]:left-[68%] min-[1152px]:min-w-[1591px] min-[1152px]:h-[423px] min-[1152px]:top-[56.5%] min-[1152px]:left-[56.5%] min-[768px]:min-w-[1003px] min-[768px]:h-[693.5px] min-[768px]:top-[46%] min-[768px]:left-[46.5%] min-[768px]:block `}
+          className={`absolute z-[-1] hidden pointer-events-none min-[1920px]:min-w-[2652px] min-[1920px]:h-[547px] min-[1440px]:min-w-[147%] min-[1440px]:h-[433px] min-[1440px]:top-[56%] min-[1440px]:left-[68%] min-[1152px]:min-w-[1591px] min-[1152px]:h-[423px] min-[1152px]:top-[56.5%] min-[1152px]:left-[56.5%] min-[768px]:min-w-[1136px] min-[768px]:h-[693.5px] min-[768px]:top-[46%] min-[768px]:left-[50%] min-[768px]:block `}
           style={{
             transform: "translate(-50%, -50%)",
           }}
