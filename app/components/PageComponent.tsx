@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import MainComponent from "./Main";
+import HeroComponent from "./Hero";
 import ProjectManagment from "./ProjectManagment";
 import WorkTogether from "./WorkTogether";
 import UseAsExtension from "./UseAsExtension";
@@ -18,7 +18,7 @@ const PageComponent = () => {
   return (
     <div className="relative">
       <Header />
-      <MainComponent />
+      <HeroComponent />
       <ProjectManagment />
       <WorkTogether />
       <UseAsExtension />
