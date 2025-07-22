@@ -27,7 +27,7 @@ const WorkWith = () => {
       {/* </div> */}
       <div className="relative w-[286px] h-[232px] overflow-hidden min-[768px]:w-[485px] min-[768px]:h-[392px] min-[1152px]:w-[528px] min-[1152px]:h-[427px] min-[1440px]:w-[582px] min-[1440px]:h-[471px] ">
         <Image
-          src={"/apps.png"}
+          src={"/Apps.png"}
           alt="programs we work with"
           fill
           className="relative overflow-hidden   "
