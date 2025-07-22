@@ -27,7 +27,7 @@ const WorkTogether = () => {
     >
       <div className="min-[1152px]:w-[527px] min-[1440px]:w-[633px] min-[1920px]:w-[670px]">
         <TitleWithDrawing
-          ImageLink="/vector.png"
+          ImageLink="/Vector.png"
           width={164}
           height={26}
           stylesForImage={`${mobStyles} ${tabletStyles} ${laptop} ${desc} ${bigDesc}`}

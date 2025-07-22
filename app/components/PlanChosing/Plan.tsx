@@ -19,7 +19,7 @@ const Plan = () => {
   return (
     <Section extraStyles="py-20">
       <TitleWithDrawing
-        ImageLink="/vector.png"
+        ImageLink="/Vector.png"
         width={106}
         height={30}
         stylesForImage={`-bottom-1 right-[85px] ${tablet} ${laptop} ${desc} ${bigDesc} `}

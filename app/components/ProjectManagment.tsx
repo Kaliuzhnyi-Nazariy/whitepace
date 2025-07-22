@@ -38,7 +38,7 @@ const ProjectManagment = () => {
           className="absolute z-[-1] left-[-16.5%] rotate-[-18deg] top-[7%] opacity-[20%] min-[768px]:w-[356px] min-[768px]:h-[271px] min-[768px]:rotate-[351deg] min-[768px]:left-[-20%] min-[768px]:top-[4%] min-[1152px]:w-[245px] min-[1152px]:h-[250px] min-[1152px]:left-[-6%] min-[1152px]:top-[13%] min-[1152px]:rotate-[330deg] min-[1440px]:w-[450px] min-[1440px]:h-[400px] min-[1440px]:rotate-[353deg] min-[1440px]:top-[2%] min-[1440px]:left-[-14%] min-[1920px]:w-full min-[1920px]:max-w-[430px] min-[1920px]:h-full min-[1920px]:max-h-[449px] min-[1920px]:rotate-0 min-[1920px]:top-[40%] min-[1920px]:left-0 "
         />
         <TitleWithDrawing
-          ImageLink="/vector.png"
+          ImageLink="/Vector.png"
           width={229}
           height={26}
           stylesForImage={`${mobStlye} ${tabletStyle} ${laptopStyle} ${desctopStyle} ${bigDesc} `}

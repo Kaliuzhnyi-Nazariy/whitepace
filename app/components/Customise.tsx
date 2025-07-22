@@ -14,7 +14,7 @@ const Customise = () => {
       <PhotoSkeleton extraStyle="mb-[60px] min-[1152px]:m-0 min-[1152px]:h-[398px] " />
       <div className="min-[1152px]:w-[494px] min-[1440px]:w-[646px] ">
         <TitleWithDrawing
-          ImageLink="/vector.png"
+          ImageLink="/Vector.png"
           width={157}
           height={26}
           stylesForImage="-bottom-1 right-3 min-[768px]:w-[221px] min-[768px]:h-5 min-[768px]:-right-[4%] min-[768px]:-bottom-0.5 min-[1152px]:w-[355px] min-[1152px]:h-[30px] min-[1152px]:right-auto min-[1152px]:-bottom-2 min-[1440px]:w-[491px] min-[1440px]:h-8 min-[1440px]:bottom-1.5 min-[1920px]:w-[448px] min-[1920px]:-bottom-3"
